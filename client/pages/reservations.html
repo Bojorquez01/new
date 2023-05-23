@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Hotel Villa Montero</title>
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/reservations.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="toolbar">
+      <div class="toolbar__logo">
+        <a href="#"><img class="logo" alt="logo" src="../assets/images/villa montero LOGO.png"></a>
+      </div>
+      <nav class="toolbar__nav">
+        <ul>
+          <li><a href="index.html">Página principal</a></li>
+          <li><a href="rooms.html">Habitaciones</a></li>
+          <li><a href="reservations.html">Reservaciones</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="login.html">Acceder</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>      
+  <main>
+    <div class="reservation-form">
+      <h2 class="container_title">Reserva tu habitación</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+        </div>
+        <div class="form-group">
+          <label for="check-in">Fecha de llegada:</label>
+          <input type="date" id="check-in" name="check-in" required>
+        </div>
+        <div class="form-group">
+          <label for="check-out">Fecha de salida:</label>
+          <input type="date" id="check-out" name="check-out" required>
+        </div>
+        <div class="form-group">
+          <label for="room-type">Tipo de habitación:</label>
+          <select id="room-type" name="room-type" required>
+            <option value="" disabled selected>Seleccione un tipo de habitación</option>
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="suite">Suite</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Comentarios adicionales:</label>
+          <textarea id="comments" name="comments" placeholder="Ingrese cualquier comentario adicional"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Reservar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer__section1">
+      <h1 class="footer_text">Hotel Villa Montero</h1>
+      <p class="footer-p">Calidez y tranquilidad</p>
+    </div>
+    <div class="footer__section2">
+      <h1 class="footer_text">Contáctanos</h1>
+      <div>
+        <img src="../assets/images/ubicacion.png" class="footer3">
+        <p class="footer-p">Carretera acolco el rosal número 58,<br> Estado de México, México</p>
+      </div>
+      <div>
+        <img src="../assets/images/telefono.png" class="footer3">
+        <p class="footer-p">718 111 2180</p>
+      </div>
+    </div>    
+    <div class="footer__section3">
+      <h1 class="footer_text">Siguenos</h1>
+      <div class="social">
+        <a href="https://www.facebook.com/people/Hotel-Villa-Montero/100057202638867/?locale=es_LA"><img src="../assets/images/facebook.png"></a>
+        <a href="https://www.instagram.com/p/BnhxOOxlsja/?tagged=entrada&hl=es"><img src="../assets/images/instagram.png"></a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

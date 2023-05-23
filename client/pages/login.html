@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--Especial Login-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registro - HVM</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+<!--StandardPage-->    
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<!--BODY-->
+<body>
+
+<!--HEADER-->
+    <header>
+
+<!--Barra MENU-->
+        <div class="toolbar">
+          <div class="toolbar__logo">
+            <a href="#"><img class="logo" alt="logo" src="../assets/images/villa montero LOGO.png"></a>
+          </div>
+          <nav class="toolbar__nav">
+            <ul>
+              <li><a href="index.html">Página principal</a></li>
+              <li><a href="rooms.html">Habitaciones</a></li>
+              <li><a href="reservations.html">Reservaciones</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+<!--MAIN-->
+    <main>
+
+<!--CONTENEDOR DE TOKIO-->
+        <div class="contenedor__todo">
+
+<!--CAJA AZUL DE ATRÁS-->
+            <div class="caja__trasera">
+
+                <div class="caja__trasera-login">
+                    <h3>¿Ya estas registrado?</h3>
+                    <p>Inicia Sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no te registras?</h3>
+                    <p>Regístrate para poder iniciar sesión</p>
+                    <button id="btn__registrarse">Registrarme</button>
+                </div>
+
+            </div>
+
+<!--Formulario de login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="" class="formulario__login">
+
+                    <h2>Iniciar sesión</h2>
+                    <input type="text" placeholder="Correo Electrónico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+
+                </form>
+                <!--Registro-->
+                <form action="" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" id="nombreInput" placeholder="Nombre Completo">
+                    <input type="text" id="apPaternoInput" placeholder="Apellido Paterno">
+                    <input type="text" id="apMaternoInput" placeholder="Apellido Materno">
+                    <input type="date" id="fechNacimientoInput" placeholder="Fecha de Nacimiento">
+                    <input type="text" id="numTelefonoInput" placeholder="Número de Teléfono">
+                    <input type="text" id="correoInput" placeholder="Correo Electrónico">
+                    <input type="password" id="contraseniaInput" placeholder="Contraseña">
+                    <button id="registrarseBtn">Registrarme</button>
+                  </form>                  
+
+            </div>
+
+        </div>
+
+    </main>
+<script src="../assets/js/login.js"></script>
+    </body>
+</html>
